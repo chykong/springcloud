@@ -1,0 +1,16 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+
+#这里的配置表示，访问/userdemo/** 直接重定向到eureka中的ms-demo-provider这个serviceId
+zuul:
+  routes:
+    client:
+       path: /eureka-client-consumer/**
+       serviceId: eureka-client-consumer
