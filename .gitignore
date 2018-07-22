@@ -26,3 +26,8 @@ hs_err_pid*
 springcloud.iml
 .idea/*.xml
 .idea/*/*
+*/client.iml
+*/config.iml
+*/consume.iml
+*/eureka-server.iml
+*/gateway.iml
